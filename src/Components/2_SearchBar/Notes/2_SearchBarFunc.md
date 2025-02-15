@@ -10,9 +10,9 @@ const [query , setQuery] = useState({
     maxPrice : 0
   });
 
-  const switchType = ()=>{
-
-  }
+  const switchType = (val) => {
+    setQuery((prev) => ({ ...prev, type: val }));
+  };
 
   return (
     <div className="searchBar">
@@ -23,7 +23,7 @@ const [query , setQuery] = useState({
 
         {
           types.map((type)=>{
-            return <button key={type} onClick={()=>switchType(type)}>{type}</button>
+            return <button key={type} onClick={()=>switchType(type)} className={query.type === type ? "active" : ""} > {type}</button>
           })
         }
 /* Note : we need to define this `types` outside the SearchBar component */
