@@ -9,7 +9,7 @@ const ListPage = () => {
 
   return (
     <div className='listPage' >
-      <div className="listContainer">List
+      <div className="listContainer">
         <div className="wrapper">
           <Filter/>
           {
@@ -18,7 +18,6 @@ const ListPage = () => {
             })
           }
 
-          
         </div>
       </div>
       <div className="mapContainer">map</div>
