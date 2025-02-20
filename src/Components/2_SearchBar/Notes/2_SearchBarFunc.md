@@ -25,14 +25,8 @@ const [query , setQuery] = useState({
           types.map((type)=>{
             return <button key={type} onClick={()=>switchType(type)} className={query.type === type ? "active" : ""} > {type}</button>
           })
-        }
+        } 
 /* Note : we need to define this `types` outside the SearchBar component */
-
-
-
-
-
-
 
       </div>
     </div>

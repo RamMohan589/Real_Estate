@@ -30,8 +30,8 @@ const SearchBar = () => {
           );
         })}
       </div>
-
       <form>
+              
         <input type="text" name="location" placeholder="City Location" />
         <input
           type="number"

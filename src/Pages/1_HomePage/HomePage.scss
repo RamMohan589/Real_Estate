@@ -1,7 +1,9 @@
+@import '../../responsive.scss';
+
+
 .homePage{
     display: flex;
     height: 100%;
-
     .homePage_left{
         flex: 3;
     .homePage_left_wrapper{
@@ -12,16 +14,35 @@
         gap: 50px;
         // background-color: cadetblue;
         height: 100%;
+
+        @include md{
+            padding: 0;
+        }
+
+        @include sm{
+            justify-content: flex-start;
+        }
        
     .homePage_left_wrapper_title{
         font-size: 44px;
+
+        @include lg{
+            font-size: 28px;
+        }
     }
     .boxes{
         display: flex;
         justify-content: space-between;
+
+        @include sm{
+            display: none;
+        }
         
         h1{
             font-size: 36px;
+            @include lg{
+                font-size: 32px;
+            }
         }
         h2{
             font-size: 20px;
@@ -37,11 +58,20 @@
         position: relative;
         display: flex;
         align-items: center;
+
+        @include md{
+            display: none;
+        }
         img{
             width: 115%;
             position: absolute;
             right: 0;
+
+            @include lg{
+                width: 105%;
+            }
         }
     }
 
+    
 }
