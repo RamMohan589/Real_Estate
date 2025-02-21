@@ -17,7 +17,6 @@ const ListPage = () => {
               return <Card key={item.id} item = {item}/>
             })
           }
-
         </div>
       </div>
       <div className="mapContainer">map</div>

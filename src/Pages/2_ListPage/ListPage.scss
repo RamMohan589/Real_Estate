@@ -4,6 +4,7 @@
     
     .listContainer{
         flex: 3;
+        height: 100%;
 
         .wrapper{
             padding-right: 50px;
@@ -11,12 +12,35 @@
             flex-direction: column;
             gap: 50px;
             overflow-y: scroll;
+            height: 100%;
+            padding-bottom: 50px;  
+        }
+
+        /* Hide scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+        .wrapper::-webkit-scrollbar {
+            width: 8px;
+            background-color: transparent;
+        }
+
+        /* Show scrollbar on hover */
+        .wrapper:hover::-webkit-scrollbar {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .wrapper::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            border-radius: 4px;
+        }
+
+        /* Show scrollbar thumb only on hover */
+        .wrapper:hover::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.3);
         }
 
     }
     .mapContainer{
         flex: 2;
-        background-color: #fcf5f3;
+        background-color: #fcf5f3; 
 
     }
 }
