@@ -3,7 +3,7 @@ import './Navbar.scss'
 
 const Navbar = () => {
   const [expand , setExpand] = useState(false);
-
+  
   return (
     <nav>
       <div className="navbar_left">

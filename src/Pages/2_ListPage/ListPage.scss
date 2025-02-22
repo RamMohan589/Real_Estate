@@ -2,7 +2,7 @@
     display: flex;
     height: 100%;
     
-    .listContainer{
+    .listContainer{ 
         flex: 3;
         height: 100%;
 
@@ -41,6 +41,7 @@
     .mapContainer{
         flex: 2;
         background-color: #fcf5f3; 
+        height: 100%;
 
     }
 }
