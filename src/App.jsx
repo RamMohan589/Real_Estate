@@ -14,22 +14,22 @@ import SinglePage from "./Pages/4_SinglePage/SinglePage";
 const App = () => {
   const router = createBrowserRouter([
     {
-        path : '/',
-        element : <Layout/>,
-        children : [
-          {
-            path : '/',
-            element : <HomePage/>
-          },
-          {
-          path : '/list',
-          element : <ListPage/>
-          },
-          {
-          path : '/:id',
-          element : <SinglePage/>
-          },
-      ]
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <HomePage />,
+        },
+        {
+          path: "/list",
+          element: <ListPage />,
+        },
+        {
+          path: "/:id",
+          element: <SinglePage />,
+        },
+      ],
     },
   ]);
   return (
@@ -41,7 +41,7 @@ const App = () => {
     //     <HomePage />
     //   </div>
     // </div>
-    <RouterProvider router = {router}/>
+    <RouterProvider router={router} />
   );
 };
 
